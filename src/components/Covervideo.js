@@ -4,7 +4,7 @@ import MainVideo from '../assets/Walking Girl.mp4'
 
 const VideoContainer = styled.section`
 width:100%;
-height:200vh;
+height:100vh;
 position:relative;
 video{
     width: 100%;
@@ -36,7 +36,9 @@ display: flex;
 justify-content:center;
 align-items:center;
 color: ${props => props.theme.text};
-
+div{
+    display:flex;
+}
 h1{
     font-family:'Kaushan Script';
     font-size:${props => props.theme.fontBig}
@@ -54,9 +56,9 @@ const Covervideo = () => {
     <VideoContainer>
         <DarkOverLay/>
         <Title>
-            <div data-scroll data-scroll-speed="4">
-                <h1>Wibe</h1>
-                <h2>Inspire.Create.Believe</h2>
+            <div data-scroll data-scroll-speed="2">
+                <h1>Wibe  </h1><br></br>
+            <h2 data-scroll data-scroll-delay='0.04' data-scroll-speed='4'>Inspire.Create.Believe</h2>
             </div>
         </Title>
         <video src = {MainVideo} type="video/mp4 " autoPlay muted loop />
